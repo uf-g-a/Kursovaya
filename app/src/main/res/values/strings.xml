@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PriceList</string>
+    <string name="create">Создать</string>
+    <string name="enter_line">Введите название списка</string>
+    <string name="enter_name">Введите название продукта</string>
+    <string name="sum">Сумма: </string>
+    <string name="enter_number">Введите количество продуктов</string>
+    <string name="enter_price">Введите цену одного продукта</string>
+    <string name="enter">Добавить</string>
+</resources>

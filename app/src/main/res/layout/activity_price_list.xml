@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="@string/enter_name"
+        android:gravity="left|clip_horizontal"
+        android:textColor="@color/black">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"
+        android:hint="@string/enter_number"
+        android:gravity="left|clip_horizontal"
+        android:layout_below="@+id/name"
+        android:textColor="@color/black"
+        android:inputType="number">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:hint="@string/enter_price"
+        android:gravity="left|clip_horizontal"
+        android:layout_below="@+id/number"
+        android:textColor="@color/black"
+        android:inputType="number"
+        >
+    </EditText>
+    <ScrollView
+        android:id="@+id/scrollScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/enterBtn"
+        android:layout_above="@+id/sumBtn">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterBtn"
+        android:text="@string/enter"
+        android:textSize="15sp"
+        android:layout_below="@+id/price">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumBtn"
+        android:layout_alignParentBottom="true"
+        android:textSize="21sp"
+        android:text="@string/sum"
+        android:layout_marginBottom="3dp">
+    </TextView>
+    <TextView
+        android:id="@+id/sumText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="21sp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/scrollScreen"
+        android:layout_toRightOf="@+id/sumBtn"
+        android:layout_toEndOf="@+id/sumBtn"
+        android:gravity="center">
+    </TextView>
+
+
+</RelativeLayout>
